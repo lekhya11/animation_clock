@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.clock {
+    height: 300px;
+    width: 300px;
+    /* border: 2px plum solid; */
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    border-radius: 150px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxkJbH_7cBXE2l0zdguPwh7eOKbZfb9Q9vOjuqAMRRx1y3RZ3o3sgnvWtx14i5GRToytI&usqp=CAU");
+    background-size: cover;
+
+
+}
+
+.hands {
+    width: 3px;
+    height: 100px;
+    background-color: plum;
+    animation: clockhand 10s linear infinite;
+    transform-origin: bottom;
+    animation-direction: normal;
+}
+
+.min {
+    animation: clockhand 60s linear infinite;
+    transform-origin: bottom;
+    animation-direction: normal;
+}
+
+.hour {
+    animation: clockhand 120s linear infinite;
+    transform-origin: bottom;
+    animation-direction: normal;
+}
+
+@keyframes clockhand {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(90deg);
+    }
+
+    70% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
